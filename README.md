@@ -12,18 +12,26 @@ should be able to run it
 
 ### 3. The functions that I have defined do not have hard coded names of the files. Those are the arguments. I am not sure what you mean by that question.
 
-For the BONUS question, I converted the text file to a CSV using pandas ( code is in the python file) so that it could be loaded to Athena. But for some reason, it kept giving me file empty. The file was definitely a table as seen in notebook. But Athena was not reading the data and I was not able to figure out why. I think I will keep working on that to figure it out. 
+### 4. To avoid using the user Access_key and Secret_key in the code, one could create a credentials file in your aws folder in your terminal. Once that is made, there is default profile created which can be used by Boto3 to interact with the AWS account. 
 
-### The SQL code would simply be
-### SELECT * from Table 
-### WHERE value = 2.6
+### 5.To fix the space, I used pandas 
+data_current.columns = data_current.columns.str.strip()
+### This removes all white spaces in all columns
+
+### 6. For the BONUS question, I converted the text file to a CSV using pandas ( code is in the python file) so that it could be loaded to Athena. I then created a table in Athena and loaded the csv. I have included a screenshot below and the Query ID. 
 
 ### Here is the screenshot of the table that I created in Athena
 
 ![Screen Shot 2021-03-23 at 10 16 29 PM](https://user-images.githubusercontent.com/13152268/112244277-70dad400-8c25-11eb-98f3-a3e9d56750a5.png)
 
 The Query ID is c376ab01-c294-450e-ad4e-15cc5f6333e7
-I am included the CSV of the result. For some reason, it did not read any of the data. I am not sure why. I know it has something to do with the path. I will think about it. 
+
+I am including the CSV of the result in my files above. For some reason, it did not read any of the data. I am not sure why. I know it has something to do with the path. I will think about it. 
+
+### The SQL code would simply be
+### SELECT * from Table 
+### WHERE value = 2.6
+
 
 
 
