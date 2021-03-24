@@ -10,7 +10,7 @@ I have now written the python file on Atom and it should run in any python progr
 python3 data_quest.py
 should be able to run it
 
-### 3. The functions that I have defined do not have hard coded names of the files. Those are the arguments. I am not sure what you mean by that question.
+### 3. The functions that I have defined do not have hard coded names of the files. Those are the arguments. Can you please elaborate on what you mean by your question?
 
 ### 4. To avoid using the user Access_key and Secret_key in the code, one could create a credentials file in your aws folder in your terminal. Once that is made, there is default profile created which can be used by Boto3 to interact with the AWS account. 
 
