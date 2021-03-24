@@ -3,7 +3,7 @@
 
 https://s3.console.aws.amazon.com/s3/buckets/bucket322?region=us-east-1&tab=objects
 
-I have now changed the permissions for the files. To do it in code, I would add extra arguments in the upload function to have ACL as 'public-read'. 
+I have now changed the permissions for the files. To do it in code, I would add extra arguments in the upload function to have ACL as 'public-read'. I have done that in my code file above.
 
 ### 2. I have a python file as well as a jupyter notebooks file with the script for uploading files onto AWS in this bucket.
 I have now written the python file on Atom and it should run in any python program. If you are running it in terminal, 
